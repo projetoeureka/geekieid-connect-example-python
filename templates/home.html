@@ -68,6 +68,10 @@
         <li><strong>Email:</strong> {{ email }}</li>
       </ul>
 
+      <p>To log out, please click the link below:</p>
+
+      <p><a href="/logout">Logout</a></p>
+
     {% else %}
 
       <h1 class="ui header">You're Logged Out!</h1>
@@ -78,6 +82,15 @@
       <p><a href="/login-with-geekie">Login with Geekie</a></p>
 
     {% endif %}
+
+    <h1 class="ui header">Source</h1>
+
+    <p>You can find the source for this example at:</p>
+
+    <p>
+      {% set lnk = "https://github.com/projetoeureka/geekieid-connect-example-python" %}
+      <a href="{{ lnk }}">{{ lnk }}</a>
+    </p>
   </div>
 
   <script src="https://cdn.jsdelivr.net/g/jquery@2.2.3,semantic-ui@2.1.8"></script>

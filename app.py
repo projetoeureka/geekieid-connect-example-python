@@ -44,6 +44,13 @@ def home():
         )
 
 
+@app.route("/logout")
+def logout():
+    if "access_token" in flask.session:
+        del flask.session["access_token"]
+    return flask.redirect(flask.url_for("home"))
+
+
 @app.route("/login-with-geekie")
 def launch_login_with_geekie():
     csrf_state = base64.b32encode(os.urandom(32))
