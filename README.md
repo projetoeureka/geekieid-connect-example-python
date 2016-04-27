@@ -3,6 +3,9 @@
 This is a Python example of an OAuth 2.0 integration with GeekieID
 Connect.
 
+You can see this example running live at
+https://geekieid-connect-ex-python.herokuapp.com/.
+
 ## Running the example
 
 To run this locally, you can request a local development **client_id**
